@@ -26,6 +26,8 @@
             <ol>
                 <li ng-repeat="lineData in listOfData">
                     {{lineData.aFld}} | {{lineData.bFld}} | {{lineData.cFld}} | {{lineData.dFld}} | {{lineData.tic_0}} | {{lineData.tic_1}} | {{lineData.tic_2}}
+                    {{$first ? loadStarts() : ''}}
+                    {{$last ? loadEnding() : ''}}
                 </li>
             </ol>
         </div>
